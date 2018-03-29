@@ -18,7 +18,7 @@ document.querySelector('#search').addEventListener('click', function search(e) {
 		results.removeChild(results.lastChild)
 	}
 	results.innerHTML = `Now Searching for ${input}...`
-	fetch(`https://api.soundcloud.com/users/?client_id=f665fc458615b821cdf1a26b6d1657f6&q=${input}`) // fetching artists from the input
+	fetch(`https://api.soundcloud.com/users/?client_id=f665fc4657f6&q=${input}`) // fetching artists from the input
 		.then(function(response) {
 			results.innerHTML = ''
 			return response.json()
